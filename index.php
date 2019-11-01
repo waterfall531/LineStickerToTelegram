@@ -40,6 +40,7 @@ class Maker {
         $staticFooter = '/iPhone/sticker@2x.png';
         $shell        = 'cd tgImage;';
 
+        //curl -o "#1.png" "https://stickershop.line-scdn.net/stickershop/v1/sticker/[249916390-249916429]/iPhone/sticker@2x.png
         //https://stickershop.line-scdn.net/stickershop/v1/sticker/249916390/iPhone/sticker@2x.png;compress=true
         //curl -o "#1.png" "https://stickershop.line-scdn.net/stickershop/v1/sticker/[244231117-244231494]/android/sticker_key.png"
         if (!isset($type)) {
@@ -99,18 +100,18 @@ class Maker {
             ]
              * */
             //call Api addstickertoset
-            foreach ($photoList as $poto){
+            foreach ($photoList as $poto) {
+                var_dump("http://f2e.baifu-tech.net:8443".$poto);
                 $respone = Request::addstickertoset([
                     'user_id'     => $this->selfId,
                     'name'        => $name.'bysWithRandyBot',
-                    'png_sticker' => "http://f2e.baifu-tech.net/".$poto,
+                    'png_sticker' => "http://f2e.baifu-tech.net:8443".$poto,
                     'emojis'      => $emoji,
                 ]);
             }
         } catch (Longman\TelegramBot\Exception\TelegramException $e) {
             var_dump($e);
         }
-
     }
 
     function getFileList() {
