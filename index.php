@@ -37,9 +37,10 @@ class Maker {
             exit();
         }
         $staticUrl    = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/';
-        $staticFooter = '/android/sticker_key.png';
+        $staticFooter = '/iPhone/sticker@2x.png';
         $shell        = 'cd tgImage;';
 
+        //https://stickershop.line-scdn.net/stickershop/v1/sticker/249916390/iPhone/sticker@2x.png;compress=true
         //curl -o "#1.png" "https://stickershop.line-scdn.net/stickershop/v1/sticker/[244231117-244231494]/android/sticker_key.png"
         if (!isset($type)) {
             //type 1
@@ -85,7 +86,7 @@ class Maker {
             $respone = Request::addstickertoset([
                 'user_id'     => $this->selfId,
                 'name'        => $name.'bysWithRandyBot',
-                'png_sticker' => "http://f2e.baifu-tech.net/".$photoList[0],
+                'png_sticker' => "http://f2e.baifu-tech.net:6666/randy".$photoList[0],
                 'emojis'      => $emoji,
             ]);
 
