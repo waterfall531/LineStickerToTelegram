@@ -12,7 +12,7 @@ class Maker {
     private $fileLocation = 'tgImage';
 
     function __construct($type = 'resize') {
-        echo 'Start Get Image';
+        echo 'Start Get Image<br>';
         if (is_numeric($type)) {
             $this->getImage();
             $list = $this->resizeImage();
@@ -36,7 +36,7 @@ class Maker {
         $url  = $_GET['id_s'];
         $url2 = $_GET['id_e'];
         if (count($_GET) < 2) {
-            echo 'error of id_s or id_e';
+            echo 'error of id_s or id_e<br>';
             exit();
         }
         $staticUrl    = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/';
@@ -59,7 +59,7 @@ class Maker {
     }
 
     function resizeImage() {
-        echo 'Start Transform To png~';
+        echo 'Start Transform To png~<br>';
 
         $files1 = scandir($this->fileLocation);
         foreach ($files1 as $filename) {
@@ -76,7 +76,7 @@ class Maker {
     }
 
     function send($resizeFileList) {
-        echo 'send to Tg';
+        echo 'send to Tg <br>';
         try {
             $telegram = new Telegram($this->bot_api_key, $this->bot_username);
 
@@ -89,11 +89,13 @@ class Maker {
             }
             $emoji = "😀";
 
+            echo "http://f2e.baifu-tech.net:6666/randy".$photoList[0];
+
             //call Api Create
-            $respone = Request::addstickertoset([
+            $respone = Request::createNewStickerSet([
                 'user_id'     => $this->selfId,
                 'name'        => $name.'bysWithRandyBot',
-                'png_sticker' => "http://f2e.baifu-tech.net:6666/randy".$photoList[0],
+                'png_sticker' => "http://f2e.baifu-tech.net:8443/randy".$photoList[0],
                 'emojis'      => $emoji,
             ]);
 
