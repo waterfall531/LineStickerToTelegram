@@ -105,7 +105,7 @@ class Controller {
         if (sizeof($params) > 0 && is_array($params)) {
             if ($type == "POST") {
                 if(isset($params['png_stickers'])){
-                    $params['png_stickers'] = '@'.curl_file_create(realpath($params['png_stickers']));
+                    $params['png_stickers'] = curl_file_create(realpath($params['png_stickers']));
 //                    unset($params['png_stickers']);
                 }
                 var_dump($params);
