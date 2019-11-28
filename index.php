@@ -33,7 +33,8 @@ class Maker {
     function getImage() {
         $url  = $_GET['id_s'];
         $url2 = $_GET['id_e'];
-        if (count($_GET) <= 2) {
+        if (count($_GET) < 2) {
+            echo 'error of id_s or id_e';
             exit();
         }
         $staticUrl    = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/';
