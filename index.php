@@ -16,7 +16,8 @@ class Maker {
         if (is_numeric($type)) {
             $this->getImage();
             $list = $this->resizeImage();
-            $this->send($list);
+            print_r($list,1);
+//            $this->send($list);
         }
 
         if ($type == 'resize') {
@@ -72,6 +73,7 @@ class Maker {
             }
         }
 
+        print_r($resizeFileList,1);
         return $resizeFileList;
     }
 
