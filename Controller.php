@@ -13,7 +13,7 @@
  */
 class Controller {
     public $botKey = "bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc";
-    public $stickerPackName = "20191128165411";
+    public $stickerPackName = "";
     public $apiUrl = "https://api.telegram.org";
     public $userID = 311768984;
     public $mainURL = "https://f2e.baifu-tech.net:8443/";
@@ -104,11 +104,13 @@ class Controller {
 
         if (sizeof($params) > 0 && is_array($params)) {
             if ($type == "POST") {
-                $payload = json_encode($params);
-                var_dump($params);
+                if(isset($params['png_stickers'])){
+                    $params['file'] = new CURLFile(realpath($params['png_stickers']));
+                    unset($params['png_stickers']);
+                }
                 curl_setopt($this->ch, CURLOPT_POST, true);
-                curl_setopt($this->ch, CURLOPT_POSTFIELDS, $payload);
-                curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type:application/json']);
+                curl_setopt($this->ch, CURLOPT_POSTFIELDS, $params);
+                curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type:multipart/form-data']);
             } else {
                 curl_setopt($this->ch, CURLOPT_HTTPGET, true);
                 curl_setopt($this->ch, CURLOPT_URL, $url.'/?'.http_build_query($params));

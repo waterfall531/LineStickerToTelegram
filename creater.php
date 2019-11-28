@@ -6,9 +6,9 @@ $return = $c->call(
     "{$c->apiUrl}/{$c->botKey}/createnewstickerset",
     [
         'user_id'=>$c->userID,
-        'name' => $c->stickerPackName,
-        'title' => $c->stickerPackName,
-        'png_sticker' => $c->mainURL.'tgImage/tg_157778390.png.png',
+        'name' => 'testdsa_by_MakeStickersWithRandyBot',//英文開頭 _by_MakeStickersWithRandyBot 結尾 、 shardLink
+        'title' => 'meowww',//showName
+        'png_stickers' => 'tgImage/tg_157778390.png.png', //firstSticker
         'emojis' => '😀',
     ],"POST"
 );
