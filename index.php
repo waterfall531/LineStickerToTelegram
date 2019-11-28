@@ -16,8 +16,7 @@ class Maker {
         if (is_numeric($type)) {
             $this->getImage();
             $list = $this->resizeImage();
-            print_r($list,1);
-//            $this->send($list);
+            $this->send($list);
         }
 
         if ($type == 'resize') {
@@ -33,6 +32,12 @@ class Maker {
 
     function getImage() {
         echo 'Download~ <br>';
+
+        $shellCode = "cd tgImage;";
+        $shellCode .= "rm -rf *.png";
+        shell_exec($shellCode);
+
+        echo 'Clean Up <br>';
 
         $url  = $_GET['id_s'];
         $url2 = $_GET['id_e'];
@@ -63,20 +68,16 @@ class Maker {
         echo 'Start Transform To png~<br>';
 
         $files1 = scandir($this->fileLocation);
-        var_dump($files1);
         foreach ($files1 as $filename) {
             if (is_file($this->fileLocation.'/'.$filename) && $filename != '.DS_Store') {
-                var_dump($filename);
-
                 $shellCode = "cd tgImage;";
                 $shellCode .= 'convert -resize 512x512 "'.$filename.'" '.'"tg_'.$filename.'.png";';
 
                 $resizeFileList[] = 'tg_'.$filename.'.png';
-                echo shell_exec($shellCode);
+                shell_exec($shellCode);
             }
         }
 
-        print_r($resizeFileList,1);
         return $resizeFileList;
     }
 
