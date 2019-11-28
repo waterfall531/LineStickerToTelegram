@@ -90,6 +90,7 @@ class Maker {
             $emoji = "😀";
 
             echo "http://f2e.baifu-tech.net:6666/randy".$photoList[0];
+            print_r($photoList,1);
 
             //call Api Create
             $respone = Request::createNewStickerSet([
