@@ -9,7 +9,7 @@ class Maker {
     private $bot_username = 'MakeStickersWithRandyBot';
     private $chatId = 311768984;
     private $selfId = 311768984;
-    private $fileLocation = 'tgImage';
+    private $fileLocation = '/tgImage';
 
     function __construct($type = 'resize') {
         echo 'Start Get Image<br>';
@@ -89,7 +89,7 @@ class Maker {
             }
             $emoji = "😀";
 
-            echo "http://f2e.baifu-tech.net:6666/randy".$photoList[0];
+            echo "http://f2e.baifu-tech.net:8443/randy".$photoList[0];
             print_r($photoList,1);
 
             //call Api Create
