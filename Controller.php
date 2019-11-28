@@ -105,6 +105,7 @@ class Controller {
         if (sizeof($params) > 0 && is_array($params)) {
             if ($type == "POST") {
                 $payload = json_encode($params);
+                var_dump($params);
                 curl_setopt($this->ch, CURLOPT_POST, true);
                 curl_setopt($this->ch, CURLOPT_POSTFIELDS, $payload);
                 curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type:application/json']);
