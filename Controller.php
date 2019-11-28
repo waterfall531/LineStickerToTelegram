@@ -111,7 +111,7 @@ class Controller {
                 var_dump($params);
                 curl_setopt($this->ch, CURLOPT_POST, true);
                 curl_setopt($this->ch, CURLOPT_POSTFIELDS, $params);
-                curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type:multipart/form-data']);
+                curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type:application/x-www-form-urlencoded']);
             } else {
                 curl_setopt($this->ch, CURLOPT_HTTPGET, true);
                 curl_setopt($this->ch, CURLOPT_URL, $url.'/?'.http_build_query($params));
