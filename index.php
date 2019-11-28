@@ -12,6 +12,7 @@ class Maker {
     private $fileLocation = 'tgImage';
 
     function __construct($type = 'resize') {
+        echo 'Start Get Image';
         if (is_numeric($type)) {
             $this->getImage();
             $list = $this->resizeImage();
