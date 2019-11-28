@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+            <state relative-caret-position="259">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -139,6 +139,11 @@
               <item name="LineStickerToTelegram" type="b2602c69:ProjectViewProjectNode" />
               <item name="LineStickerToTelegram" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LineStickerToTelegram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LineStickerToTelegram" type="462c0819:PsiDirectoryNode" />
+              <item name="tgImage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -188,7 +193,7 @@
       <workItem from="1572586125923" duration="912000" />
       <workItem from="1572595696336" duration="876000" />
       <workItem from="1572833470029" duration="50000" />
-      <workItem from="1574922911389" duration="1785000" />
+      <workItem from="1574922911389" duration="2090000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1572586557121</created>
@@ -309,11 +314,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574925362444</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="push">
+      <created>1574925454966</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1574925454966</updated>
+    </task>
+    <task id="LOCAL-00019" summary="push">
+      <created>1574925516285</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1574925516285</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25902000" />
+    <option name="totallyTimeSpent" value="26207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -332,7 +351,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.42590675" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.42590675" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -477,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
+        <state relative-caret-position="259">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

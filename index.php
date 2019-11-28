@@ -9,7 +9,7 @@ class Maker {
     private $bot_username = 'MakeStickersWithRandyBot';
     private $chatId = 311768984;
     private $selfId = 311768984;
-    private $fileLocation = '/tgImage';
+    private $fileLocation = './tgImage';
 
     function __construct($type = 'resize') {
         echo 'Start Get Image<br>';
