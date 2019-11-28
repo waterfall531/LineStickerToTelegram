@@ -108,6 +108,7 @@ class Controller {
                     $params['file'] = new CURLFile(realpath($params['png_stickers']));
                     unset($params['png_stickers']);
                 }
+                var_dump($params);
                 curl_setopt($this->ch, CURLOPT_POST, true);
                 curl_setopt($this->ch, CURLOPT_POSTFIELDS, $params);
                 curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['Content-Type:multipart/form-data']);

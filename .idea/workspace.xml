@@ -4,7 +4,6 @@
     <list default="true" id="1e8182d8-deb3-48db-9943-83756d46ba75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creater.php" beforeDir="false" afterPath="$PROJECT_DIR$/creater.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,24 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/creater.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="570">
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="459">
+              <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
               <folding>
                 <element signature="n#translit#0;n#Controller#0;n#!!top" />
                 <element signature="n#showError#0;n#Controller#0;n#!!top" />
-                <element signature="n#call#0;n#Controller#0;n#!!top" />
                 <element signature="n#checkCurlResponse#0;n#Controller#0;n#!!top" />
               </folding>
             </state>
@@ -82,8 +80,8 @@
         <option value="$USER_HOME$/Downloads/telegram-stickers-master/Controller.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Controller.php" />
         <option value="$PROJECT_DIR$/creater.php" />
+        <option value="$PROJECT_DIR$/Controller.php" />
       </list>
     </option>
   </component>
@@ -218,7 +216,7 @@
       <workItem from="1572586125923" duration="912000" />
       <workItem from="1572595696336" duration="876000" />
       <workItem from="1572833470029" duration="50000" />
-      <workItem from="1574922911389" duration="7683000" />
+      <workItem from="1574922911389" duration="7859000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1572586557121</created>
@@ -444,11 +442,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574932904885</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="push">
+      <created>1574935643581</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1574935643581</updated>
+    </task>
+    <task id="LOCAL-00034" summary="push">
+      <created>1574935785616</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1574935785616</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31800000" />
+    <option name="totallyTimeSpent" value="31976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -654,23 +666,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller.php">
+    <entry file="file://$PROJECT_DIR$/creater.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="n#translit#0;n#Controller#0;n#!!top" />
-            <element signature="n#showError#0;n#Controller#0;n#!!top" />
-            <element signature="n#call#0;n#Controller#0;n#!!top" />
-            <element signature="n#checkCurlResponse#0;n#Controller#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="570">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creater.php">
+    <entry file="file://$PROJECT_DIR$/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="459">
+          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+          <folding>
+            <element signature="n#translit#0;n#Controller#0;n#!!top" />
+            <element signature="n#showError#0;n#Controller#0;n#!!top" />
+            <element signature="n#checkCurlResponse#0;n#Controller#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
