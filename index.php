@@ -53,7 +53,7 @@ class Maker {
             $shell .= 'do curl -o ${a}.png '.$staticUrl.'/${a}'.$staticFooter.' ;';
             $shell .= 'done';
         }
-        shell_exec($shell);
+        echo shell_exec($shell);
     }
 
     function resizeImage() {
