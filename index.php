@@ -32,7 +32,7 @@ class Maker {
     }
 
     function getImage() {
-        echo 'Download~';
+        echo 'Download~ <br>';
 
         $url  = $_GET['id_s'];
         $url2 = $_GET['id_e'];
@@ -63,6 +63,7 @@ class Maker {
         echo 'Start Transform To png~<br>';
 
         $files1 = scandir($this->fileLocation);
+        var_dump($files1);
         foreach ($files1 as $filename) {
             if (is_file($this->fileLocation.'/'.$filename) && $filename != '.DS_Store') {
                 $shellCode = "cd tgImage;";

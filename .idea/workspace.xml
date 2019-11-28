@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="118">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -193,7 +193,7 @@
       <workItem from="1572586125923" duration="912000" />
       <workItem from="1572595696336" duration="876000" />
       <workItem from="1572833470029" duration="50000" />
-      <workItem from="1574922911389" duration="2090000" />
+      <workItem from="1574922911389" duration="2303000" />
     </task>
     <task id="LOCAL-00001" summary="push">
       <created>1572586557121</created>
@@ -328,11 +328,25 @@
       <option name="project" value="LOCAL" />
       <updated>1574925516285</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="push">
+      <created>1574925756670</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1574925756670</updated>
+    </task>
+    <task id="LOCAL-00021" summary="push">
+      <created>1574925906592</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1574925906592</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26207000" />
+    <option name="totallyTimeSpent" value="26420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -496,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="118">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
         </state>
       </provider>
     </entry>
