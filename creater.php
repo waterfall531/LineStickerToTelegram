@@ -2,7 +2,6 @@
 include __DIR__ . DIRECTORY_SEPARATOR . 'Controller.php';
 $c = new Controller();
 
-echo $c->mainURL.'/tgImage/tg_157778390.png.png';
 $return = $c->call(
     "{$c->apiUrl}/{$c->botKey}/createnewstickerset",
     [

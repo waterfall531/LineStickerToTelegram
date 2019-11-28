@@ -120,6 +120,8 @@ class Controller {
             curl_setopt($this->ch, CURLOPT_URL, $url.'/?'.http_build_query($params));
         }
 
+        echo $url;
+
         $out  = curl_exec($this->ch);
         $info = curl_getinfo($this->ch);
         $code = curl_getinfo($this->ch, CURLINFO_HTTP_CODE);
