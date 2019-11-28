@@ -95,17 +95,14 @@ class Maker {
             }
             $emoji = "😀";
 
-            echo "http://f2e.baifu-tech.net:8443/randy".$photoList[0];
-            print_r($photoList,1);
-
             //call Api Create
-            $respone = Request::createNewStickerSet([
+            $respone = Request::createnewstickerset([
                 'user_id'     => $this->selfId,
                 'name'        => $name.'bysWithRandyBot',
                 'png_sticker' => "http://f2e.baifu-tech.net:8443/randy".$photoList[0],
                 'emojis'      => $emoji,
             ]);
-
+            error_log($respone);
             /*
              * [
                 'user_id' => $c->userID,
@@ -116,15 +113,15 @@ class Maker {
              * */
             //call Api addstickertoset
             foreach ($photoList as $poto) {
-                var_dump("http://f2e.baifu-tech.net:8443".$poto);
                 $respone = Request::addstickertoset([
                     'user_id'     => $this->selfId,
                     'name'        => $name.'bysWithRandyBot',
                     'png_sticker' => "http://f2e.baifu-tech.net:8443".$poto,
                     'emojis'      => $emoji,
                 ]);
+                error_log($respone);
             }
-        } catch (Longman\TelegramBot\Exception\TelegramException $e) {
+        } catch (Exception $e) {
             var_dump($e);
         }
     }
