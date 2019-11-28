@@ -8,8 +8,9 @@ $return = $c->call(
     [
         'user_id'=>$c->userID,
         'name' => $c->stickerPackName,
+        'title' => $c->stickerPackName,
         'png_sticker' => $c->mainURL.'/tgImage/tg_157778390.png.png',
         'emojis' => '😀',
-    ],"GET"
+    ],"POST"
 );
 echo PHP_EOL.$return.PHP_EOL;
