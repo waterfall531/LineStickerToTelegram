@@ -105,8 +105,8 @@ class Controller {
         if (sizeof($params) > 0 && is_array($params)) {
             if ($type == "POST") {
                 if(isset($params['png_stickers'])){
-                    $params['file'] = new CURLFile($params['png_stickers']);
-                    unset($params['png_stickers']);
+                    $params['png_stickers'] = new CURLFile($params['png_stickers']);
+//                    unset($params['png_stickers']);
                 }
                 var_dump($params);
                 curl_setopt($this->ch, CURLOPT_POST, true);
