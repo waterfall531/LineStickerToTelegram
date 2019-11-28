@@ -66,11 +66,13 @@ class Maker {
         var_dump($files1);
         foreach ($files1 as $filename) {
             if (is_file($this->fileLocation.'/'.$filename) && $filename != '.DS_Store') {
+                var_dump($filename);
+
                 $shellCode = "cd tgImage;";
                 $shellCode .= 'convert -resize 512x512 "'.$filename.'" '.'"tg_'.$filename.'.png";';
 
                 $resizeFileList[] = 'tg_'.$filename.'.png';
-                shell_exec($shellCode);
+                echo shell_exec($shellCode);
             }
         }
 
