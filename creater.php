@@ -8,7 +8,7 @@ $return = $c->call(
         'user_id'=>$c->userID,
         'name' => $c->stickerPackName,
         'title' => $c->stickerPackName,
-        'png_sticker' => $c->mainURL.'/tgImage/tg_157778390.png.png',
+        'png_sticker' => $c->mainURL.'tgImage/tg_157778390.png.png',
         'emojis' => '😀',
     ],"POST"
 );
