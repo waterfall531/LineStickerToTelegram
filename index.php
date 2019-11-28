@@ -13,7 +13,6 @@ class Maker {
 
     function __construct($type = 'resize') {
         if (is_numeric($type)) {
-            //shell_exec('cd tgImage;rm -rf *;');
             $this->getImage();
             $list = $this->resizeImage();
             $this->send($list);
@@ -31,6 +30,8 @@ class Maker {
     }
 
     function getImage() {
+        echo 'Download~';
+
         $url  = $_GET['id_s'];
         $url2 = $_GET['id_e'];
         if (count($_GET) < 2) {
@@ -57,6 +58,8 @@ class Maker {
     }
 
     function resizeImage() {
+        echo 'Start Transform To png~';
+
         $files1 = scandir($this->fileLocation);
         foreach ($files1 as $filename) {
             if (is_file($this->fileLocation.'/'.$filename) && $filename != '.DS_Store') {
@@ -72,6 +75,7 @@ class Maker {
     }
 
     function send($resizeFileList) {
+        echo 'send to Tg';
         try {
             $telegram = new Telegram($this->bot_api_key, $this->bot_username);
 
