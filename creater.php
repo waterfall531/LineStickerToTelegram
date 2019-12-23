@@ -2,7 +2,7 @@
 include __DIR__.DIRECTORY_SEPARATOR.'Controller.php';
 $c = new Controller();
 
-$name     = 'testdsa';
+$name     = 'test1223';
 $linkName = $name.'_by_MakeStickersWithRandyBot';
 
 $return = $c->call(
@@ -11,7 +11,7 @@ $return = $c->call(
         'user_id'      => $c->userID,
         'name'         => $linkName,//英文開頭 _by_MakeStickersWithRandyBot 結尾 、 shardLink
         'title'        => $name,//showName
-        'png_stickers' => 'tgImage/tg_157778390.png.png', //firstSticker
+        'png_stickers' => 'https://f2e.baifu-tech.net:8443/tgImage/tg_157778390.png.png', //firstSticker
         'emojis'       => '😀',
     ], "POST"
 );
