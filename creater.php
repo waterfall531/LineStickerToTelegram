@@ -1,8 +1,19 @@
 <?php
 include __DIR__.DIRECTORY_SEPARATOR.'Controller.php';
+
+function generateRandomString($length = 10) {
+    $characters = 'abcdefghijklmnopqrstuvwxyz';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
+}
+
 $c = new Controller();
 
-$name     = 'dmlkfj'.rand(100,999);
+$name     = generateRandomString(6);
 $linkName = $name.'_by_MakeStickersWithRandyBot';
 
 $return = $c->call(
