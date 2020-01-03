@@ -90,7 +90,7 @@ class Maker {
             $name      = $this->generateRandomString(6);
             $photoList = [];
             foreach ($resizeFileList as $fileName) {
-                $photoList[] = '/tgImage/'.$fileName;
+                $photoList[] = './tgImage/'.$fileName;
             }
 
             $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/createnewstickerset' \\";
