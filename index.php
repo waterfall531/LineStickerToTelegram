@@ -87,7 +87,7 @@ class Maker {
 
             $telegram->setUploadPath($this->fileLocation);
 
-            $name     = $this->generateRandomString(6);
+            $name      = $this->generateRandomString(6);
             $photoList = [];
             foreach ($resizeFileList as $fileName) {
                 $photoList[] = '/tgImage/'.$fileName;
@@ -99,6 +99,7 @@ class Maker {
             $common .= "--form 'user_id=311768984'";
             $common .= "--form 'title={$name}'";
             $common .= "--form 'emojis=😀'";
+            echo $common."\r\n";
             system($common);
 
             //addStickerToSet
@@ -108,6 +109,7 @@ class Maker {
                 $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot'";
                 $common .= "--form 'user_id=311768984'";
                 $common .= "--form 'emojis=😀'";
+                echo $common."\r\n";
                 system($common);
             }
         } catch (Exception $e) {
