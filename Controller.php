@@ -104,9 +104,15 @@ class Controller {
 
         if (sizeof($params) > 0 && is_array($params)) {
             if ($type == "POST") {
-                if(isset($params['png_stickers'])){
-                    $params['png_stickers'] = curl_file_create(realpath($params['png_stickers']),'image/png','t1.png');
-//                    unset($params['png_stickers']);
+                if (isset($params['png_stickers'])) {
+                    // send a file
+                    curl_setopt($this->ch, CURLOPT_POST, true);
+                    curl_setopt(
+                        $this->ch,
+                        CURLOPT_POSTFIELDS,
+                        [
+                            'png_stickers' => '@'.realpath($params['png_stickers']),
+                        ]);
                 }
                 var_dump($params);
                 curl_setopt($this->ch, CURLOPT_POST, true);
