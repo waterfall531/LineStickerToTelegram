@@ -93,21 +93,21 @@ class Maker {
                 $photoList[] = '/tgImage/'.$fileName;
             }
 
-            $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/createnewstickerset'";
-            $common .= "--form 'png_sticker=@{$photoList[0]}'";
-            $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot'";
-            $common .= "--form 'user_id=311768984'";
-            $common .= "--form 'title={$name}'";
-            $common .= "--form 'emojis=😀'";
+            $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/createnewstickerset' \\";
+            $common .= "--form 'png_sticker=@{$photoList[0]}' \\";
+            $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
+            $common .= "--form 'user_id=311768984' \\";
+            $common .= "--form 'title={$name}' \\";
+            $common .= "--form 'emojis=😀''";
             echo $common."\r\n";
             system($common);
 
             //addStickerToSet
             foreach ($photoList as $poto) {
-                $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/addStickerToSet'";
-                $common .= "--form 'png_sticker=@{$poto}'";
-                $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot'";
-                $common .= "--form 'user_id=311768984'";
+                $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/addStickerToSet' \\";
+                $common .= "--form 'png_sticker=@{$poto}' \\";
+                $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
+                $common .= "--form 'user_id=311768984' \\";
                 $common .= "--form 'emojis=😀'";
                 echo $common."\r\n";
                 system($common);
