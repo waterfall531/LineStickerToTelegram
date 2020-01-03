@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e8182d8-deb3-48db-9943-83756d46ba75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/creater.php" beforeDir="false" afterPath="$PROJECT_DIR$/creater.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/creater.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="563">
+              <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -81,8 +81,8 @@
         <option value="$USER_HOME$/Downloads/telegram-stickers-master/Controller.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/creater.php" />
         <option value="$PROJECT_DIR$/Controller.php" />
+        <option value="$PROJECT_DIR$/creater.php" />
       </list>
     </option>
   </component>
@@ -216,21 +216,7 @@
       <workItem from="1577414907022" duration="134000" />
       <workItem from="1577674150898" duration="754000" />
       <workItem from="1577690319861" duration="2377000" />
-      <workItem from="1578042243013" duration="252000" />
-    </task>
-    <task id="LOCAL-00001" summary="push">
-      <created>1572586557121</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1572586557121</updated>
-    </task>
-    <task id="LOCAL-00002" summary="push">
-      <created>1572595756774</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572595756774</updated>
+      <workItem from="1578042243013" duration="491000" />
     </task>
     <task id="LOCAL-00003" summary="push">
       <created>1574923091171</created>
@@ -554,11 +540,32 @@
       <option name="project" value="LOCAL" />
       <updated>1578042404358</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="push">
+      <created>1578042499828</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1578042499828</updated>
+    </task>
+    <task id="LOCAL-00050" summary="push">
+      <created>1578042523314</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1578042523314</updated>
+    </task>
+    <task id="LOCAL-00051" summary="type">
+      <created>1578042669417</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1578042669417</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41424000" />
+    <option name="totallyTimeSpent" value="41663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -594,7 +601,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push" />
-    <option name="LAST_COMMIT_MESSAGE" value="push" />
+    <MESSAGE value="type" />
+    <option name="LAST_COMMIT_MESSAGE" value="type" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_7.php">
@@ -768,8 +776,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/creater.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="563">
+          <caret line="25" column="85" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
         </state>
       </provider>
     </entry>
