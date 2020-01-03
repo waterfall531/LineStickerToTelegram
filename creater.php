@@ -24,7 +24,6 @@ $return = $c->call(
         'name'        => $linkName,//英文開頭 _by_MakeStickersWithRandyBot 結尾 、 shardLink
         'title'       => $name,//showName
         'png_sticker' => curl_file_create(realpath('./tgImage/tg_157778398.png.png')), //firstSticker
-        //png_sticker:https://f2e-test.baifu-tech.net/tgImage/tg_157778399.png.png
         'emojis'      => '😀',
     ], "POST"
 );

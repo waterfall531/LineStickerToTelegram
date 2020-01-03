@@ -93,33 +93,23 @@ class Maker {
             foreach ($resizeFileList as $fileName) {
                 $photoList[] = '/tgImage/'.$fileName;
             }
-            $emoji = "😀";
 
-            //call Api Create
-            $respone = Request::createnewstickerset([
-                'user_id'     => $this->selfId,
-                'name'        => $name.'bysWithRandyBot',
-                'png_sticker' => "http://f2e.baifu-tech.net:8443/randy".$photoList[0],
-                'emojis'      => $emoji,
-            ]);
-            error_log($respone);
-            /*
-             * [
-                'user_id' => $c->userID,
-                'name' => $c->stickerPackName,
-                'png_sticker' => "{$c->mainURL}/stickers/stickers/{$sticker['filename']}_{$rnd}.png",
-                'emojis' => $sticker['emoji'][0],
-            ]
-             * */
-            //call Api addstickertoset
+            $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/createnewstickerset'";
+            $common .= "--form 'png_sticker=@{$photoList[0]}'";
+            $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot'";
+            $common .= "--form 'user_id=311768984'";
+            $common .= "--form 'title={$name}'";
+            $common .= "--form 'emojis=😀'";
+            system($common);
+
+            //addStickerToSet
             foreach ($photoList as $poto) {
-                $respone = Request::addstickertoset([
-                    'user_id'     => $this->selfId,
-                    'name'        => $name.'bysWithRandyBot',
-                    'png_sticker' => "http://f2e.baifu-tech.net:8443".$poto,
-                    'emojis'      => $emoji,
-                ]);
-                error_log($respone);
+                $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/addStickerToSet'";
+                $common .= "--form 'png_sticker=@{$poto}'";
+                $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot'";
+                $common .= "--form 'user_id=311768984'";
+                $common .= "--form 'emojis=😀'";
+                system($common);
             }
         } catch (Exception $e) {
             var_dump($e);
