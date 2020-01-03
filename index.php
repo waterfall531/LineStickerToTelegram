@@ -87,7 +87,7 @@ class Maker {
 
             $telegram->setUploadPath($this->fileLocation);
 
-            $name      = 'lineCR'.date('YmdHis').rand(10, 99);
+            $name     = $this->generateRandomString(6);
             $photoList = [];
             foreach ($resizeFileList as $fileName) {
                 $photoList[] = '/tgImage/'.$fileName;
@@ -125,6 +125,17 @@ class Maker {
         }
 
         return $resizeFileList;
+    }
+
+    function generateRandomString($length = 10) {
+        $characters       = 'abcdefghijklmnopqrstuvwxyz';
+        $charactersLength = strlen($characters);
+        $randomString     = '';
+        for ($i = 0 ; $i < $length ; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+
+        return $randomString;
     }
 }
 
