@@ -9,10 +9,10 @@ class Maker {
     private $chatId = 311768984;
     private $fileLocation = './tgImage';
 
-    function __construct($type = 'resize') {
+    function __construct($type = 'resize',$type_e = 1) {
         echo "Start Get Image \r\n";
         if (is_numeric($type)) {
-            $this->getImage();
+            $this->getImage($type,$type_e);
             $list = $this->resizeImage();
             $this->send($list);
         }
@@ -28,7 +28,7 @@ class Maker {
         }
     }
 
-    function getImage() {
+    function getImage($s,$e) {
         echo "Download~ \r\n";
 
         $shellCode = "cd tgImage;";
@@ -37,12 +37,8 @@ class Maker {
 
         echo "Clean Up \r\n";
 
-        $url  = $_GET['id_s'];
-        $url2 = $_GET['id_e'];
-        if (count($_GET) < 2) {
-            echo "error of id_s or id_e\r\n";
-            exit();
-        }
+        $url  = $s;
+        $url2 = $e;
         $staticUrl    = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/';
         $staticFooter = '/iPhone/sticker@2x.png';
         $shell        = 'cd tgImage;';
@@ -150,4 +146,12 @@ class Maker {
     }
 }
 
-$tmp = new Maker('send');
+$params = [];
+$params['e'] = 0;
+if (is_numeric($argv[1]) && is_numeric($argv[2])){
+    $params['s'] = $argv[1];
+    $params['e'] = $argv[2];
+}else{
+    $params['s'] = $argv[1];
+}
+$tmp = new Maker($params['s'],$params['e']);
