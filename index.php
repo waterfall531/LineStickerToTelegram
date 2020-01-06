@@ -102,6 +102,11 @@ class Maker {
             echo $common."\r\n";
             system($common);
 
+            $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/getStickerSet' \\";
+            $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
+            echo $common."\r\n";
+            system($common);
+
             //addStickerToSet
             foreach ($photoList as $poto) {
                 $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/addStickerToSet' \\";
