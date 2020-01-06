@@ -11,7 +11,7 @@ class Maker {
     private $fileLocation = './tgImage';
 
     function __construct($type = 'resize') {
-        echo 'Start Get Image<br>';
+        echo "Start Get Image \r\n";
         if (is_numeric($type)) {
             $this->getImage();
             $list = $this->resizeImage();
@@ -30,18 +30,18 @@ class Maker {
     }
 
     function getImage() {
-        echo 'Download~ <br>';
+        echo "Download~ \r\n";
 
         $shellCode = "cd tgImage;";
         $shellCode .= "rm -rf *.png";
         shell_exec($shellCode);
 
-        echo 'Clean Up <br>';
+        echo "Clean Up \r\n";
 
         $url  = $_GET['id_s'];
         $url2 = $_GET['id_e'];
         if (count($_GET) < 2) {
-            echo 'error of id_s or id_e<br>';
+            echo "error of id_s or id_e\r\n";
             exit();
         }
         $staticUrl    = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/';
@@ -64,7 +64,7 @@ class Maker {
     }
 
     function resizeImage() {
-        echo 'Start Transform To png~<br>';
+        echo "Start Transform To png~\r\n";
 
         $files1 = scandir($this->fileLocation);
         foreach ($files1 as $filename) {
@@ -81,7 +81,7 @@ class Maker {
     }
 
     function send($resizeFileList) {
-        echo 'send to Tg <br>';
+        echo "send to Tg \r\n";
         try {
             $telegram = new Telegram($this->bot_api_key, $this->bot_username);
 
@@ -98,7 +98,7 @@ class Maker {
             $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
             $common .= "--form 'user_id=311768984' \\";
             $common .= "--form 'title={$name}' \\";
-            $common .= "--form 'emojis=😀''";
+            $common .= "--form 'emojis=😀'";
             echo $common."\r\n";
             system($common);
 
