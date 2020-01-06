@@ -106,7 +106,7 @@ class Maker {
             foreach ($photoList as $poto) {
                 $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/addStickerToSet' \\";
                 $common .= "--form 'png_sticker=@{$poto}' \\";
-                $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
+                $common .= "--form 'name={$name}' \\";
                 $common .= "--form 'user_id=311768984' \\";
                 $common .= "--form 'emojis=😀'";
                 echo $common."\r\n";
