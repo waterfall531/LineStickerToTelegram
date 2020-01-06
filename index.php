@@ -7,7 +7,6 @@ class Maker {
     private $bot_api_key = '687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc';
     private $bot_username = 'MakeStickersWithRandyBot';
     private $chatId = 311768984;
-    private $selfId = 311768984;
     private $fileLocation = './tgImage';
 
     function __construct($type = 'resize') {
@@ -48,9 +47,6 @@ class Maker {
         $staticFooter = '/iPhone/sticker@2x.png';
         $shell        = 'cd tgImage;';
 
-        //curl -o "#1.png" "https://stickershop.line-scdn.net/stickershop/v1/sticker/[249916390-249916429]/iPhone/sticker@2x.png
-        //https://stickershop.line-scdn.net/stickershop/v1/sticker/249916390/iPhone/sticker@2x.png;compress=true
-        //curl -o "#1.png" "https://stickershop.line-scdn.net/stickershop/v1/sticker/[244231117-244231494]/android/sticker_key.png"
         if (!isset($type)) {
             //type 1
             $shell .= 'curl -o "#1.png" "'.$staticUrl.'['.$url.'-'.$url2.']'.$staticFooter.'"';
@@ -96,7 +92,7 @@ class Maker {
             $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/createnewstickerset' \\";
             $common .= "--form 'png_sticker=@{$photoList[0]}' \\";
             $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
-            $common .= "--form 'user_id=311768984' \\";
+            $common .= "--form 'user_id={$this->chatId}' \\";
             $common .= "--form 'title={$name}' \\";
             $common .= "--form 'emojis=😀'";
             echo $common."\r\n";
@@ -116,13 +112,15 @@ class Maker {
                 $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/addStickerToSet' \\";
                 $common .= "--form 'png_sticker=@{$poto}' \\";
                 $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
-                $common .= "--form 'user_id=311768984' \\";
+                $common .= "--form 'user_id={$this->chatId}' \\";
                 $common .= "--form 'emojis=😀'";
                 echo $common."\r\n";
                 system($common);
                 echo "\r\n";
                 sleep(1);
             }
+
+            echo "https://t.me/addstickers/{$name}_by_MakeStickersWithRandyBot"."\r\n";
         } catch (Exception $e) {
             var_dump($e);
         }

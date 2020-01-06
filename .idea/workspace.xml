@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+            <state relative-caret-position="534">
+              <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -66,8 +66,8 @@
       <find>addstickertoset</find>
       <find>createnewstickerset</find>
       <find>addStickerToSet</find>
-      <find>stickerPackName</find>
       <find>&lt;br</find>
+      <find>stickerPackName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,21 +217,7 @@
       <workItem from="1577414907022" duration="134000" />
       <workItem from="1577674150898" duration="754000" />
       <workItem from="1577690319861" duration="2377000" />
-      <workItem from="1578042243013" duration="3162000" />
-    </task>
-    <task id="LOCAL-00013" summary="push">
-      <created>1574923649440</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1574923649440</updated>
-    </task>
-    <task id="LOCAL-00014" summary="push">
-      <created>1574923717613</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1574923717613</updated>
+      <workItem from="1578042243013" duration="3558000" />
     </task>
     <task id="LOCAL-00015" summary="push">
       <created>1574923793914</created>
@@ -562,11 +548,25 @@
       <option name="project" value="LOCAL" />
       <updated>1578296563369</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="send">
+      <created>1578296593592</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1578296593592</updated>
+    </task>
+    <task id="LOCAL-00063" summary="send">
+      <created>1578296705514</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1578296705514</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44334000" />
+    <option name="totallyTimeSpent" value="44730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -778,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+        <state relative-caret-position="534">
+          <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
         </state>
       </provider>
     </entry>
