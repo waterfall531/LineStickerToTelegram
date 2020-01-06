@@ -100,12 +100,16 @@ class Maker {
             $common .= "--form 'title={$name}' \\";
             $common .= "--form 'emojis=😀'";
             echo $common."\r\n";
+            sleep(1);
             system($common);
+            echo "\r\n";
 
             $common = "curl --location --request POST 'https://api.telegram.org/bot687866318:AAGe4zkO---677eXnFtctP2Dg_dfvQxItnc/getStickerSet' \\";
             $common .= "--form 'name={$name}_by_MakeStickersWithRandyBot' \\";
             echo $common."\r\n";
+            sleep(1);
             system($common);
+            echo "\r\n";
 
             //addStickerToSet
             foreach ($photoList as $poto) {
@@ -116,6 +120,8 @@ class Maker {
                 $common .= "--form 'emojis=😀'";
                 echo $common."\r\n";
                 system($common);
+                echo "\r\n";
+                sleep(1);
             }
         } catch (Exception $e) {
             var_dump($e);
