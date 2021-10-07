@@ -41,6 +41,7 @@ class Maker {
         $url2 = $e;
         $staticUrl    = 'https://stickershop.line-scdn.net/stickershop/v1/sticker/';
         $staticFooter = '/iPhone/sticker@2x.png';
+        $staticFooter = '/android/sticker.png;compress=true';
         $shell        = 'cd tgImage;';
 
         if (!isset($type)) {
